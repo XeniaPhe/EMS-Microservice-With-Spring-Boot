@@ -6,7 +6,6 @@ import com.xenia.employeemanagementsystem.filter.core.enums.OperationTypeHQL;
 import com.xenia.employeemanagementsystem.utility.BusinessUtility;
 import org.springframework.data.util.Pair;
 
-import java.math.BigDecimal;
 import java.util.Map;
 
 public class BetweenFilter<T extends Comparable<T>> extends Filter<T> {

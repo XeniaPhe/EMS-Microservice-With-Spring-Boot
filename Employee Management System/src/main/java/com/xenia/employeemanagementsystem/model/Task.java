@@ -2,11 +2,11 @@ package com.xenia.employeemanagementsystem.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.xenia.employeemanagementsystem.exceptions.impl.InvalidValueException;
-import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.util.Date;
 
 @Data

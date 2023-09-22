@@ -4,13 +4,17 @@ import com.xenia.employeemanagementsystem.dto.response.IEntityResponse;
 import com.xenia.employeemanagementsystem.filter.core.EntityFilter;
 import com.xenia.employeemanagementsystem.model.EntityBase;
 import com.xenia.employeemanagementsystem.utility.DTOUtility;
-import jakarta.persistence.*;
-import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.PrimitiveIterator;
 
 @Transactional
 public abstract class EntityRepository<T extends EntityBase, U extends EntityFilter, V extends IEntityResponse> {
@@ -65,6 +69,7 @@ public abstract class EntityRepository<T extends EntityBase, U extends EntityFil
     public List<V> findAll() {
         Class<V> responseClass = getResponseType();
         String hql = DTOUtility.getConstructorExpressionForHQL(responseClass);
+
         TypedQuery<V> query = entityManager.createQuery(hql, responseClass);
 
         return query.getResultList();

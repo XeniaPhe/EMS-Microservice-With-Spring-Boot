@@ -1,9 +1,9 @@
 package com.xenia.employeemanagementsystem.service;
 
-import com.xenia.employeemanagementsystem.filter.criteria.core.Criteria;
 import com.xenia.employeemanagementsystem.dto.request.create.EmployeeCreateRequest;
 import com.xenia.employeemanagementsystem.dto.request.update.EmployeeUpdateRequest;
 import com.xenia.employeemanagementsystem.dto.response.EmployeeResponse;
+import com.xenia.employeemanagementsystem.filter.criteria.core.Criteria;
 import com.xenia.employeemanagementsystem.filter.criteria.core.enums.OperationTypeURI;
 import com.xenia.employeemanagementsystem.filter.criteria.domain.DepartmentCriteria;
 import com.xenia.employeemanagementsystem.filter.criteria.domain.EmployeeCriteria;
@@ -12,12 +12,12 @@ import com.xenia.employeemanagementsystem.filter.domain.DepartmentFilter;
 import com.xenia.employeemanagementsystem.filter.domain.EmployeeFilter;
 import com.xenia.employeemanagementsystem.filter.domain.TaskFilter;
 import com.xenia.employeemanagementsystem.model.Employee;
-import com.xenia.employeemanagementsystem.repository.EntityRepository;
 import com.xenia.employeemanagementsystem.repository.EmployeeRepository;
+import com.xenia.employeemanagementsystem.repository.EntityRepository;
 import com.xenia.employeemanagementsystem.utility.RepositoryUtility;
-import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 

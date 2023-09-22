@@ -1,7 +1,8 @@
 package com.xenia.employeemanagementsystem.model;
 
-import jakarta.persistence.*;
 import lombok.Data;
+
+import javax.persistence.*;
 
 @Data
 @Entity

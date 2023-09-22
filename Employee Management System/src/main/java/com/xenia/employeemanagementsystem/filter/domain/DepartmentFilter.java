@@ -4,7 +4,8 @@ import com.xenia.employeemanagementsystem.dto.response.DepartmentResponse;
 import com.xenia.employeemanagementsystem.filter.core.EntityFilter;
 import com.xenia.employeemanagementsystem.filter.core.Filter;
 import com.xenia.employeemanagementsystem.model.Department;
-import jakarta.validation.constraints.NotNull;
+
+import javax.validation.constraints.NotNull;
 
 @SuppressWarnings("unchecked")
 public class DepartmentFilter extends EntityFilter<Department> {

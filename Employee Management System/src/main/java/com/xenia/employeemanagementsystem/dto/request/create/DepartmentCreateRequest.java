@@ -1,14 +1,15 @@
 package com.xenia.employeemanagementsystem.dto.request.create;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.Setter;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
 
 @Getter
 @Setter
 public class DepartmentCreateRequest implements ICreateRequest {
-    private String name;
+    @NotBlank private String name;
     private String description;
-    private Integer managerId;
+    @Positive private Integer managerId;
 }

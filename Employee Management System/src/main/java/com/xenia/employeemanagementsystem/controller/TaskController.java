@@ -2,7 +2,6 @@ package com.xenia.employeemanagementsystem.controller;
 
 import com.xenia.employeemanagementsystem.dto.request.create.TaskCreateRequest;
 import com.xenia.employeemanagementsystem.dto.request.update.TaskUpdateRequest;
-import com.xenia.employeemanagementsystem.dto.response.EmployeeResponse;
 import com.xenia.employeemanagementsystem.dto.response.TaskResponse;
 import com.xenia.employeemanagementsystem.filter.criteria.core.enums.OperationTypeURI;
 import com.xenia.employeemanagementsystem.filter.criteria.domain.DepartmentCriteria;
@@ -13,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.lang.model.type.ReferenceType;
 import java.util.Date;
 import java.util.List;
 

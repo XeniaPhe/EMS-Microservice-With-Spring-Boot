@@ -4,8 +4,8 @@ import com.xenia.employeemanagementsystem.dto.response.TaskResponse;
 import com.xenia.employeemanagementsystem.filter.core.EntityFilter;
 import com.xenia.employeemanagementsystem.filter.core.Filter;
 import com.xenia.employeemanagementsystem.model.Task;
-import jakarta.validation.constraints.NotNull;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @SuppressWarnings("unchecked")

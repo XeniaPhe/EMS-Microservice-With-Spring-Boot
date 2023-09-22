@@ -1,6 +1,5 @@
 package com.xenia.employeemanagementsystem.dto.response;
 
-import com.xenia.employeemanagementsystem.dto.request.IEntityRequest;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

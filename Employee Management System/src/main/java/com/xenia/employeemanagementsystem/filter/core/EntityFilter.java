@@ -3,8 +3,8 @@ package com.xenia.employeemanagementsystem.filter.core;
 import com.xenia.employeemanagementsystem.exceptions.impl.IllegalOperationException;
 import com.xenia.employeemanagementsystem.model.EntityBase;
 import com.xenia.employeemanagementsystem.utility.BusinessUtility;
-import jakarta.validation.constraints.NotNull;
 
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

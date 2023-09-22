@@ -2,14 +2,10 @@ package com.xenia.employeemanagementsystem.utility;
 
 import com.xenia.employeemanagementsystem.exceptions.impl.ResourceNotFoundException;
 import com.xenia.employeemanagementsystem.model.EntityBase;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.TypedQuery;
 import org.hibernate.Hibernate;
 import org.hibernate.LazyInitializationException;
-import org.hibernate.Session;
 
-import java.util.Iterator;
-import java.util.Map;
+import javax.persistence.EntityManager;
 
 public class RepositoryUtility {
     private RepositoryUtility(){

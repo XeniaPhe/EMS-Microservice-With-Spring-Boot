@@ -1,9 +1,10 @@
 package com.xenia.employeemanagementsystem.model;
 
-import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
+
+import javax.persistence.*;
 
 @Data
 @MappedSuperclass

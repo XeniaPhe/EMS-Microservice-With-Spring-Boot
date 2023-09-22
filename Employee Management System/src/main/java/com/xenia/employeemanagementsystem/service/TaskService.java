@@ -11,9 +11,9 @@ import com.xenia.employeemanagementsystem.model.Task;
 import com.xenia.employeemanagementsystem.repository.EntityRepository;
 import com.xenia.employeemanagementsystem.repository.TaskRepository;
 import com.xenia.employeemanagementsystem.utility.RepositoryUtility;
-import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service

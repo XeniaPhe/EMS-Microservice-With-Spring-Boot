@@ -1,6 +1,9 @@
 package com.xenia.employeemanagementsystem.filter.core;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CompositeFilter<T extends Comparable<T>> extends Filter<T>{
     public static class Builder<T extends Comparable<T>> extends FilterBuilder<CompositeFilter<T>> {

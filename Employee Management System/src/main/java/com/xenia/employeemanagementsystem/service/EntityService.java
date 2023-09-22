@@ -7,8 +7,8 @@ import com.xenia.employeemanagementsystem.exceptions.impl.ResourceNotFoundExcept
 import com.xenia.employeemanagementsystem.filter.core.EntityFilter;
 import com.xenia.employeemanagementsystem.model.EntityBase;
 import com.xenia.employeemanagementsystem.repository.EntityRepository;
-import jakarta.transaction.Transactional;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Transactional
