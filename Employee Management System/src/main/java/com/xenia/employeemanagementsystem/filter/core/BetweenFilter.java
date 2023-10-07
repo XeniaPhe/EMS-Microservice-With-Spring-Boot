@@ -39,12 +39,8 @@ public class BetweenFilter<T extends Comparable<T>> extends Filter<T> {
             return this;
         }
 
-        public BetweenFilter<T> build(){
-            validateFilter();
-            return filter;
-        }
-
-        private void validateFilter(){
+        @Override
+        protected void validateFilter(){
             if(BusinessUtility.isAnyNull(filter.lowerBound, filter.upperBound)) {
                 throw new IllegalStateException("lowerBound and upperBound fields must be set before" +
                         " building the BetweenFilter object!");

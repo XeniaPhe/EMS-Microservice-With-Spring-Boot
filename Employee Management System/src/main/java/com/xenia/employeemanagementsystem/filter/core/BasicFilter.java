@@ -21,12 +21,8 @@ public class BasicFilter<T extends Comparable<T>> extends Filter<T>{
             return this;
         }
 
-        public BasicFilter<T> build(){
-            validateFilter();
-            return filter;
-        }
-
-        private void validateFilter() {
+        @Override
+        protected void validateFilter() {
             if(BusinessUtility.isAnyNull(filter.operationType, filter.value)) {
                 throw new IllegalStateException("operationType and value fields must be set before building the " +
                         "BasicFilter object!");

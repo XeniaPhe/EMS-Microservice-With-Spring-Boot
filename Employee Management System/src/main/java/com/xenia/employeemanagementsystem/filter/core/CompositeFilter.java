@@ -24,7 +24,8 @@ public class CompositeFilter<T extends Comparable<T>> extends Filter<T>{
             return filter;
         }
 
-        private void validateFilter() {
+        @Override
+        protected void validateFilter() {
             if (filter.getParameters().size() == 0)
                 throw new IllegalStateException("CompositeFilter must at least have one FilterComponent!");
         }

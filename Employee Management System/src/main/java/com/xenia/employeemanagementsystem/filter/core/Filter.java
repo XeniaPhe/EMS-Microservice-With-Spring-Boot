@@ -1,5 +1,7 @@
 package com.xenia.employeemanagementsystem.filter.core;
 
+import java.util.Map;
+
 public abstract class Filter<T extends Comparable<T>> extends FilterBase {
     protected static int counter = 0;
 
